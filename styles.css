@@ -1,0 +1,63 @@
+main {
+    padding: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, dodgerblue 20%, #1f2e51 );
+    clip-path: polygon(0 0, 100% 0, 100% 36%, 0 60%);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 20rem 1fr;
+    position: relative;
+}
+
+.jpg {
+    width: 20rem;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.sidetab {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 1rem 2rem 1rem 1rem;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 4px -1px grey;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+p {
+    line-height: 1.5;
+}
+
+svg {
+    width: 1.3rem;
+    height: auto;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/*MY WORK*/
