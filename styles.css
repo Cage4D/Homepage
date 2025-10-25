@@ -23,7 +23,7 @@ main::before {
     width: 100%;
     height: 100%;
     background: linear-gradient(135deg, dodgerblue 20%, #1f2e51 );
-    clip-path: polygon(0 0, 100% 0, 100% 36%, 0 60%);
+    clip-path: polygon(0 0, 100% 0, 100% 32%, 0 56%);
 }
 
 header {
@@ -189,10 +189,6 @@ footer p {
     margin: 0;
     line-height: 1;
     padding-bottom: 5px;
-}
-
-.img-container {
-    
 }
 
 .pic__name {
