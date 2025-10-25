@@ -1,8 +1,18 @@
+@font-face {
+    font-family: "Bitcount";
+    src: url(./fonts/bitcountgridsingle-variablefont_crsvelshelxpslntwght-webfont.woff2) format("woff2"),
+         url(./fonts/bitcountgridsingle-variablefont_crsvelshelxpslntwght-webfont.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(./fonts/Inter.woff) format("woff");
+}
+
 main {
     padding: 3rem 5rem;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
 }
 
 main::before {
@@ -46,8 +56,14 @@ header {
     gap: 0.4rem;
 }
 
+.name {
+    font-family: "Inter";
+    font-weight: bold;
+}
+
 p {
     line-height: 1.5;
+    font-family: "Inter";
 }
 
 svg {
@@ -58,6 +74,7 @@ svg {
 h3 {
     margin: 0;
     font-size: 1.8rem;
+    font-family: "Bitcount";
 }
 
 /*MY WORK*/
@@ -81,10 +98,14 @@ div[class^="pro__card"] {
 }
 
 section > p {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
+    font-family: "Bitcount";
 }
 
+span {
+    font-family: "Inter";
+}
 
 /*FOOTER*/
 footer {
