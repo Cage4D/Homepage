@@ -46,7 +46,7 @@ header {
     padding: 1rem 2rem 1rem 1rem;
     background-color: #ffffff;
     box-shadow: 2px 2px 4px -1px grey;
-    border-radius: 0px 5px 5px 0px;
+    border-radius: 0px 5px 5px 5px;
 }
 
 .icons {
@@ -86,7 +86,7 @@ h3 {
 
 div[class^="pro__card"] {
     width: 1fr;
-    height: 40vh;
+    min-height: 40vh;
     border-radius: 8px;
     box-shadow: 2px 2px 4px -1px grey;
     display: flex;
@@ -120,7 +120,8 @@ footer {
 
 .footer__pic {
     width: 30vw;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     border-radius: 5px;
 }
 
@@ -187,9 +188,25 @@ footer p {
     flex: 2;
     margin: 0;
     line-height: 1;
+    padding-bottom: 5px;
 }
 
-@media (500px <= width <= 1000px) {
+.img-container {
+    
+}
+
+.pic__name {
+    font-size: large;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    position: absolute;
+    left: calc(10rem - 5.5ch);
+    transform: translateY(5px);
+}
+
+
+@media (500px <= width <= 1024px) {
 
     main {
         padding: 1rem 2rem;
@@ -197,6 +214,7 @@ footer p {
     }
 
     main::before {
+        clip-path: polygon(0 0, 100% 0, 100% 23%, 0 47%);
         z-index: -2;
     }
 
@@ -232,6 +250,11 @@ footer p {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+    .pic__name {
+        transform: translate(-20px, 30px) rotate(-12deg);
+        left: calc(50% - 5.5ch);
     }
 }
 
@@ -286,5 +309,11 @@ footer p {
 
     svg {
         width: 1.1rem;
+    }
+
+    .pic__name {
+        left: calc(50% - 5.5ch);
+        transform: translateY(5px);
+        font-size: medium;
     }
 }
