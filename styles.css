@@ -252,6 +252,10 @@ footer p {
         transform: translate(-20px, 30px) rotate(-12deg);
         left: calc(50% - 5.5ch);
     }
+
+    footer p {
+        width: 25ch;
+    }
 }
 
 @media (width < 500px) {
